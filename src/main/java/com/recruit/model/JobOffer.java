@@ -1,4 +1,4 @@
-package com.quovantis.recruit.model;
+package com.recruit.model;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -13,11 +13,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.google.gson.annotations.SerializedName;
-import com.quovantis.recruit.util.LocalDateDeserializer;
-import com.quovantis.recruit.util.LocalDateSerializer;
+import com.recruit.util.LocalDateDeserializer;
+import com.recruit.util.LocalDateSerializer;
 
 public class JobOffer {
-	@JsonProperty(value = "job_id", access = JsonProperty.Access.READ_ONLY)
+	@JsonProperty(value = "job_id")
 	private transient int jobId;
 
 	@SerializedName("job_title") // for unit testing

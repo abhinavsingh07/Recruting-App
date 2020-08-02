@@ -1,14 +1,16 @@
-package com.quovantis.recruit.respository;
+package com.recruit.respository;
 
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Repository;
-import com.quovantis.recruit.exceptionHandler.ResourceNotFoundException;
-import com.quovantis.recruit.model.JobApplication;
-import com.quovantis.recruit.util.ApplicationStatus;
+
+import com.recruit.exceptionHandler.ResourceNotFoundException;
+import com.recruit.model.JobApplication;
+import com.recruit.util.ApplicationStatus;
 
 /**
  * Respository class for database related operations.For Now using Hashmap to
@@ -46,6 +48,10 @@ public class JobApplicationRepo implements ObjectRepository<JobApplication> {
 			ja.setAppliedDate(LocalDate.now());
 			ja.setApplicationStatus(ApplicationStatus.APPLIED);
 			jobAppRepo.put(jobAppId, ja);
+			
+			if(new Random().nextBoolean())
+				Thread.sleep(1500);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw e;
@@ -74,6 +80,13 @@ public class JobApplicationRepo implements ObjectRepository<JobApplication> {
 	 * Get all job applications
 	 */
 	public List<JobApplication> getAll() {
+		if(new Random().nextBoolean())
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		return jobAppRepo.values().stream().collect(Collectors.toList());
 	}
 

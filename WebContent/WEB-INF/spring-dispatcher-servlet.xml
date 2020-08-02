@@ -12,7 +12,7 @@
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<context:annotation-config />
 	<context:component-scan
-		base-package="com.quovantis.recruit" />
+		base-package="com.recruit" />
 	<bean id="HandlerMapping"
 		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
 

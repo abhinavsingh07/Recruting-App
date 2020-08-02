@@ -1,4 +1,4 @@
-package com.quovantis.recruit.respository;
+package com.recruit.respository;
 
 import java.util.List;
 

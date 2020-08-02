@@ -1,4 +1,4 @@
-package com.quovantis.recruit.model;
+package com.recruit.model;
 
 import java.time.LocalDate;
 
@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.google.gson.annotations.SerializedName;
-import com.quovantis.recruit.util.ApplicationStatus;
-import com.quovantis.recruit.util.LocalDateDeserializer;
-import com.quovantis.recruit.util.LocalDateSerializer;
+import com.recruit.util.ApplicationStatus;
+import com.recruit.util.LocalDateDeserializer;
+import com.recruit.util.LocalDateSerializer;
 
 public class JobApplication {
 	//made transient to not to include in json body in junit test

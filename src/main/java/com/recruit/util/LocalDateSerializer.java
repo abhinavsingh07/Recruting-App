@@ -1,4 +1,4 @@
-package com.quovantis.recruit.util;
+package com.recruit.util;
 
 import java.io.IOException;
 import java.time.LocalDate;

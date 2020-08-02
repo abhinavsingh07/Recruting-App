@@ -1,4 +1,4 @@
-package com.quovantis.recruit.util;
+package com.recruit.util;
 
 /**
  * Enum to store application status

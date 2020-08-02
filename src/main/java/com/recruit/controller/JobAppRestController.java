@@ -1,4 +1,4 @@
-package com.quovantis.recruit.controller;
+package com.recruit.controller;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import com.quovantis.recruit.model.JobApplication;
-import com.quovantis.recruit.respository.JobApplicationRepo;
+import com.recruit.model.JobApplication;
+import com.recruit.respository.JobApplicationRepo;
 
 /**
  * Job Application Rest Controller
